@@ -36,5 +36,5 @@ BS 仓库包含与心率（HR）与血氧（SpO2）检测相关的算法和示�
   - max30102.h
   - BUILD.gn
   - evaluation                — 离线数据库评估
--data/                        — 实测数据评估
--DWT+VS-LMS.fwpkg             — 烧录固件
+- data/                       — 实测数据评估
+- DWT+VS-LMS.fwpkg            — 烧录固件

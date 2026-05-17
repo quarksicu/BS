@@ -1,0 +1,70 @@
+================================================================================
+心率数据对齐分析报告
+================================================================================
+
+处理数据集 1...
+  读取 Apple Watch 数据...
+    - 获得 150 个数据点
+  读取 hi3863 串口数据...
+    - 获得 624 个 HR 数据点
+  对齐两组数据（基于最大相关系数）...
+    - 最优时间偏移: 10 秒
+    - 最高相关系数: 0.585229
+    - 尝试偏移数: 61
+    - 对齐后 116 个数据点
+  计算评估指标...
+    - MAE: 4.1379 BPM
+    - RMSE: 5.5266 BPM
+    - RMAE: 0.047403
+    - 相关系数 r: 0.585229
+    - p 值: 5.23e-12
+
+
+数据集 2:
+----------------------------------------
+  数据点数: 99
+  平均绝对误差 (MAE): 4.4141 BPM
+  均方根误差 (RMSE): 5.8357 BPM
+  相对平均绝对误差 (RMAE): 0.055450
+  Pearson 相关系数 (r): 0.524401
+  p 值: 2.53e-08
+  对齐后的CSV: c:\Users\gaoti\Desktop\data\2\aligned_2.csv
+  时序曲线图: c:\Users\gaoti\Desktop\data\2\timeseries_2.png
+  相关性散点图: c:\Users\gaoti\Desktop\data\2\correlation_2.png
+
+数据集 3:
+----------------------------------------
+  数据点数: 89
+  平均绝对误差 (MAE): 3.6910 BPM
+  均方根误差 (RMSE): 4.6571 BPM
+  相对平均绝对误差 (RMAE): 0.051328
+  Pearson 相关系数 (r): 0.720762
+  p 值: 1.67e-15
+  对齐后的CSV: c:\Users\gaoti\Desktop\data\3\aligned_3.csv
+  时序曲线图: c:\Users\gaoti\Desktop\data\3\timeseries_3.png
+  相关性散点图: c:\Users\gaoti\Desktop\data\3\correlation_3.png
+
+数据集 4:
+----------------------------------------
+  数据点数: 104
+  平均绝对误差 (MAE): 4.0192 BPM
+  均方根误差 (RMSE): 4.9161 BPM
+  相对平均绝对误差 (RMAE): 0.045894
+  Pearson 相关系数 (r): 0.575425
+  p 值: 1.67e-10
+  对齐后的CSV: c:\Users\gaoti\Desktop\data\4\aligned_4.csv
+  时序曲线图: c:\Users\gaoti\Desktop\data\4\timeseries_4.png
+  相关性散点图: c:\Users\gaoti\Desktop\data\4\correlation_4.png
+
+数据集 5:
+----------------------------------------
+  数据点数: 100
+  平均绝对误差 (MAE): 4.3350 BPM
+  均方根误差 (RMSE): 5.6123 BPM
+  相对平均绝对误差 (RMAE): 0.058297
+  Pearson 相关系数 (r): 0.514624
+  p 值: 4.32e-08
+  对齐后的CSV: c:\Users\gaoti\Desktop\data\5\aligned_5.csv
+  时序曲线图: c:\Users\gaoti\Desktop\data\5\timeseries_5.png
+  相关性散点图: c:\Users\gaoti\Desktop\data\5\correlation_5.png
+

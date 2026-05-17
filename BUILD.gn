@@ -1,0 +1,174 @@
+# Copyright (c) 2021 Shenzhen Kaihong Digital Industry Development Co.,Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/lite/config/component/lite_component.gni")
+import("enable_function.gni")
+
+lite_component("app") {
+    features = []
+    if(En_HealthMonitor == true)
+    {
+        features += ["HealthMonitor"]
+    }
+    if(enable_hello == true){
+        features += ["my_first_app"]
+    }
+    if(enable_at == true){
+        features += ["at_test"]
+    }
+    if(enable_dsoftbus == true){
+        features += ["softbus_sdk/softbus_app:softbus_sdk"]
+    }
+    if(En_OsThread == true)
+    {
+        features += ["OsThread"]
+    }
+    if(En_OsTimer == true)
+    {
+        features += ["OsTimer"]
+    }
+    if(En_OsSem == true)
+    {
+        features += ["OsSem"]
+    }
+    if(En_OsMutex == true)
+    {
+        features += ["OsMutex"]
+    }
+    if(En_OsEventF == true)
+    {
+        features += ["OsEventF"]
+    }
+    if(En_OsMes == true)
+    {
+        features += ["OsMes"]
+    }
+    if(En_Fstest == true)
+    {
+        features += ["FsTest"]
+    }
+    if(En_Button == true)
+    {
+        features += ["button"]
+    }
+    if(En_Interrupt == true)
+    {
+        features += ["Interrupt"]
+    }
+    if(En_DoubleLinkedList == true)
+    {
+        features += ["DoubleLinkedList"]
+    }
+    if(En_BleServer == true)
+    {
+        features += ["BleServer"]
+    }
+    if(En_Buzzer == true)
+    {
+        features += ["Buzzer"]
+    }
+    if(En_LightMonitor == true)
+    {
+        features += ["LightMonitor"]
+    }
+    if(En_InfraredTemp == true)
+    {
+        features += ["InfraredTemp"]
+    }
+    if(En_TempHumi == true)
+    {
+        features += ["TempHumi"]
+    }
+    if(En_HumanInfrared == true)
+    {
+        features += ["HumanInfrared"]
+    }
+    if(En_LightRGB == true)
+    {
+        features += ["LightRGB"]
+    }
+    if(En_SoilMoisture == true)
+    {
+        features += ["SoilMoisture"]
+    }
+    if(En_HrSpo2 == true)
+    {
+        features += ["HrSpo2"]
+    }
+    if(En_AlcoholDetect == true)
+    {
+        features += ["AlcoholDetect"]
+    }
+    if(En_LightSpark == true)
+    {
+        features += ["LightSpark"]
+    }
+    if(En_Adc == true)
+    {
+        features += ["Adc"]
+    }
+    if(En_Flash == true)
+    {
+        features += ["Flash"]
+    }
+    if(En_WIFI_AP == true)
+    {
+        features += ["Wifi/WiFi_AP"]
+
+    }
+    if(En_WIFI_STA == true)
+    {
+        features += ["Wifi"]
+        features += ["data_receive"]
+        features += ["at_test"]
+    }
+    if(En_PhyModel_scenes == true)
+    {
+        features += ["phyModel"]
+    }
+        if(En_Softbus_Logs == true)
+    {
+        features += ["softbus_logs"]
+    }
+    if(En_Button_Light == true)
+    {
+        features += ["button_light"]
+    }
+    if(En_EXPERIMENT_MQTT == true)
+    {
+        features += ["MqttLittleExperiment"]
+    }
+    if(En_NFC_PULLUP_WECHAT == true)
+    {
+        features += ["nfc_pullup_wechat"]
+    }
+    if(En_UartDemo == true)
+    {
+        features += ["uart_demo"]
+    }
+    if(En_OledDemo == true)
+    {
+        features += ["oled_demo"]
+    }
+    if(En_NFC == true)
+    {
+        features += ["nfc"]
+    }
+    if(En_I2cDemo == true)
+    {
+        features += ["i2c_demo"]
+    }
+}
+
+
+
